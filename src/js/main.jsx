@@ -10,9 +10,12 @@ import '../styles/index.css'
 
 // components
 import Home from './components/Home';
+import Semáforo from './components/semáforo';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+
+const root = ReactDOM.createRoot(document.querySelector('#root'));
+root.render(<React.StrictMode>
+  <Home />
+  <Semáforo />
+</React.StrictMode>
+);
